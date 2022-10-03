@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotapp</title>
+    <link rel="stylesheet" href="for.css">
+    <link rel="shortcut icon" href="Imagenes/images.jpeg">
+</head>
+
+<body>
+    <h1>Bienvenidos</h1>
+    <h3>Aqui podra adoptar una lombriz para que usted pueda ver su crecimiento.</h3>
+    <div class="log">
+        <h3 id="login">Cree su usuario</h3>
+        <div>
+            <form action="">
+                <label>Correo electronico: <input placeholder="Email" value="@gmail.com" type="email" name="email"
+                        required></label>
+        </div>
+        <div><label>Contraseña: <input placeholder="Contraseña" type="password" name="Contraseña" required></label>
+        </div>
+        <!-- Inicio tarjeta -->
+        <p style="text-decoration:underline ;"><b>Datos de la tarjeta:</b></p><br>
+        <div>
+            <label for="inputNombre">Nombre del titular</label>
+            <input type="text" id="inputNombre" maxlength="19" autocomplete="off" required>
+        </div>
+        <div>
+            <label>Numero de Tarjeta de credito: <input type="text" id="inputNumero" maxlength="19" autocomplete="off"
+                    required></label>
+        </div>
+        <div><label for="Mes">Mes:</label>
+            <select name="Mes " id="Mes">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Año">Año:</label>
+            <select name="Año " id="Año">
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+                <option value="28">2028</option>
+                <option value="29">2029</option>
+                <option value="30">2030</option>
+            </select>
+        </div>
+
+        <div><label for="inputCCV">CCV</label>
+            <input type="text" id="inputCCV" maxlength="3" required>
+        </div>
+
+        <div><label for="Con">Contribución mensual mínima:</label>
+            <select name="Contribucion " id="Con">
+                <option value="10p">U$D10</option>
+                <option value="25p">U$D25</option>
+                <option value="50p">U$D50</option>
+                <option value="100p">U$D100</option>
+                <option value="500p">U$D500</option>
+                <option value="1000p">U$D1.000</option>
+                <option value="10000p">U$D10.000</option>
+            </select>
+        </div>
+        <!-- Tarjeta fin -->
+        <div>
+            <label>Nombre para su nueva lombriz: <input placeholder="Nombre Mascota" type="text" name="Nombre"
+                    required></label>
+        </div>
+
+        <div>
+            Preferencia:
+            <label>
+                Macho: <input type="radio" name="Genero" value="M">
+            </label>
+            <label>
+                Hembra: <input type="radio" name="Genero" value="F"><br>
+            </label>
+            </div>
+            <div>
+            <label for="Raza">Raza que desea:</label>
+            <select name="Raza " id="Raza">
+                <option value="EP">Epigea</option>
+                <option value="EN">Endogea</option>
+                <option value="An">Anecica</option>
+                <option value="AD">Agua dulce</option>
+                <option value="M">Marina</option>
+            </select>
+        </div>
+        <div>
+        <label for="con">Contanos porque quiere adoptar una lombriz</label></div>
+    <div><textarea name="" id="con" cols="40" rows="10"></textarea></div>
+        <label for="TYC">Aceptar bases y condiciones</label>
+        <input type="checkbox" id="TYC" name="bases\_y\_condiciones" required>
+
+        <br>
+        <input type="submit" name="Loguearse">
+
+
+    </div>
+    </form>
+    <div class="flex">
+        <img src="Imagenes/tipos-de-lombrices.jpeg" alt="lombriz">
+    </div>
+    <!--<img src="https://png.pngtree.com/png-clipart/20190120/ourlarge/pngtree-dog-cat-pet-shovel-officer-png-image_494987.jpg" alt="">-->
+
+</body>
+
+</html>
+</body>
+
+</html>
