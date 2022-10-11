@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie</title>
+
+    <style>
+        .flex-container {
+            display: flex;   /* div será un contenedor flex */
+            flex-direction: row;
+            align-items: stretch;
+            background-color: black;
+            height: 280px;
+        }
+
+        .flex-container > div {  /* selectores avanzados */
+            color: rgb(209, 209, 209);
+            /*align-self: stretch;
+            align-content: stretch;*/
+            /*flex-basis: 20vwpx; Podemos usar content, px, %, em, vw, etc */
+            margin: 0,100px;
+            padding: 20px;
+            font-size: 30px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div style="flex-grow: 1">Quienes somos</div>
+        <div style="flex-grow: 1">Otros datos</div>
+        <div style="flex-grow: 1">y un google-map</div>
+    </div>
+</body>
+</html>

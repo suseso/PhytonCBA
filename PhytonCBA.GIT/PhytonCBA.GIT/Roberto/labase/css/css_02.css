@@ -1,0 +1,68 @@
+/*SOLO PARA LA CABECERA
+    quitar luego de determinar como se manejará la cabecera
+    porque ya está en cabecera.css
+*/
+.cab-container {
+    display: flex;   /* div será un contenedor flex */
+    flex-direction: row;
+    align-items: stretch;
+    background-image: url("../img/02.png");
+    background-size: auto;
+    height: 500px;
+}
+
+.cab-container > div {  /* selectores avanzados */
+    color: white;
+    align-self: stretch;
+    align-content: stretch;
+    /*flex-basis: 20vwpx; Podemos usar content, px, %, em, vw, etc */
+    /*margin: 0,100px;
+    padding: 20px;*/
+    font-size: 30px;
+    /*width: 120px;*/
+}
+/*FIN CABECERA*/
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    /*padding: 10px;*/
+}
+
+.cabecera, .cuerpo, .pie{
+    flex-grow: 1;
+    flex-basis: 100%;
+    /*padding: 10px;*/
+}
+
+/* colores 
+.cabecera{background: #581845; color:white}*/
+.cuerpo{background: #FFC300}
+.pie{background: #DAF7A6}
+
+/* media queries */
+/* tamaño tablet 
+@media all and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> 
+        flex: 1 1 auto; /* <flex-grow> <flex-shrink> <flex-basis>
+    }
+}*/
+
+.iframe-01{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 500px;
+    /*height: 100%;*/
+}
+
+/* tamaño pc */
+@media all and (min-width: 800px){
+    /*.cuerpo{flex:1 0;}  /* <flex-grow> <flex-shrink> */
+    .cuerpo{order: 1;}
+    .pie{order: 2;}
+}

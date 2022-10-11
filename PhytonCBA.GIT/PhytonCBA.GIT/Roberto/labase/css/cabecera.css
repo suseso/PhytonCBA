@@ -1,0 +1,120 @@
+/*Navegador fijo*/
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .Nav {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+  }
+  header {
+    background: rgba(14, 12, 12, 0.788);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    justify-content: space-between;
+  }
+  
+  nav {
+    float: right; /* Desplazamos el nav hacia la izquierda */
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #5c4f15;
+  }
+  
+/*Fin*/
+.logo {
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    float: left
+}
+
+#sall {
+    justify-content: space-between;
+    float: left
+}
+
+/*header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: rgba(48, 48, 48, 0.726);
+    align-items: center;
+    padding: 12px;
+}
+*/
+
+/*SOLO PARA LA CABECERA*/
+.cab-container {
+    display: grid;
+    /* div será un contenedor grid */
+    flex-direction: row;
+    align-items: stretch;
+    background-image: url("../img/055.jpg    ");
+    background-size: 1400px;
+    height: 500px;
+}
+
+.cab-container>div {
+    /* selectores avanzados */
+    color: white;
+    align-self: stretch;
+    align-content: stretch;
+    /*flex-basis: 20vwpx; Podemos usar content, px, %, em, vw, etc */
+    /*margin: 0,100px;
+    padding: 20px;*/
+    font-size: 30px;
+    /*width: 120px;*/
+}
+
+h1 {
+    /*titulo*/
+    text-align: center;
+    color: rgba(48, 48, 48, 0.973);
+    text-decoration: underline;
+}
+
+.but {
+    text-align: center;
+}
+
+header div{
+    place-content: flex-start;
+}
+
+header div nav{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+#menu, #burger{
+    display: none;
+
+}
+@media only screen and(max-width:900px) {
+    header di    
+}
+
+
+
+
+/*FIN CABECERA*/
